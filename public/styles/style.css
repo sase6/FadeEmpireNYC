@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
 .landing-page {
   position: relative;
   height: 100vh;
@@ -5,14 +6,14 @@
   overflow: hidden;
   background: indianred;
   display: grid;
-  grid-template-rows: 80vh 20vh;
+  grid-template-rows: calc(100vh - 100px) 100px;
 }
 
 .landing-video {
   position: relative;
   top: 0;
   width: 1920px;
-  height: 80vh;
+  height: calc(100vh - 100px);
   margin: auto;
   left: calc(50vw - 960px);
 }
@@ -20,7 +21,7 @@
 .landing-video-overlay {
   position: absolute;
   width: 100vw;
-  height: 80vh;
+  height: calc(100vh - 100px);
   top: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.525);
@@ -29,7 +30,76 @@
 
 .google-maps-iframe {
   width: 100vw;
-  height: 20vh;
+  height: 100px;
+}
+
+nav {
+  position: relative;
+  width: 100vw;
+  height: 75px;
+  display: grid;
+  grid-template-columns: -webkit-max-content -webkit-max-content;
+  grid-template-columns: max-content max-content;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.menu-container {
+  position: relative;
+  width: 75px;
+  height: 75px;
+  display: grid;
+  place-items: center;
+}
+
+.quote-text {
+  font-family: "Secular One", sans-serif;
+  font-size: 40px;
+  font-weight: 900;
+  color: white;
+}
+
+.call-to-action {
+  position: relative;
+  width: 100vw;
+  text-align: center;
+  display: grid;
+  grid-template-rows: -webkit-max-content -webkit-max-content;
+  grid-template-rows: max-content max-content;
+  grid-row-gap: 25px;
+  place-items: center;
+  height: 300px;
+  top: calc(35vh - 150px);
+}
+
+.cta-button {
+  position: relative;
+  width: 210px;
+  height: 40px;
+}
+
+.schedule-button {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: none;
+  border: 2px solid skyblue;
+  color: indianred;
+  z-index: 1;
+  font-size: 17px;
+  font-weight: 900;
+}
+
+.schedule-button-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: white;
+  top: 5px;
+  left: 5px;
 }
 
 * {
