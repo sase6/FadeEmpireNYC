@@ -3,10 +3,12 @@
 
 //Imports
 @import './landing-page';
+@import './team-page';
 
 * {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth !important;
 }
 
 a {
