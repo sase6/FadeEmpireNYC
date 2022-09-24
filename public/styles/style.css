@@ -4,6 +4,8 @@
   width: 100vw;
   overflow: hidden;
   background: indianred;
+  display: grid;
+  grid-template-rows: 80vh 20vh;
 }
 
 .landing-video {
@@ -13,6 +15,21 @@
   height: 80vh;
   margin: auto;
   left: calc(50vw - 960px);
+}
+
+.landing-video-overlay {
+  position: absolute;
+  width: 100vw;
+  height: 80vh;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.525);
+  z-index: 1;
+}
+
+.google-maps-iframe {
+  width: 100vw;
+  height: 20vh;
 }
 
 * {
