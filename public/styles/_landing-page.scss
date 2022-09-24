@@ -1,0 +1,16 @@
+.landing-page {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background: indianred;
+}
+
+.landing-video {
+  position: relative;
+  top: 0;
+  width: 1920px;
+  height: 80vh;
+  margin: auto;
+  left: calc(50vw - 960px);
+}
