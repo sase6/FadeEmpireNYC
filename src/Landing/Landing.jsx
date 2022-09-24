@@ -1,21 +1,23 @@
-import React from 'react';
+import React, {useState} from 'react';
 import MenuIcon from '@mui/icons-material/Menu';
+import Menu from './Menu.jsx';
 
 const backgroundUrl = '/img/broll.mp4';
 const logoUrl = '/img/ryanLogo.png';
 
-export default () => {
-  //
+export default ({page, setPage}) => {
+  const [renderMenu, setRenderMenu] = useState(false);
 
   return (
-    <div className="landing-page">
+    <div className="landing-page" id='landing-page'>
       <div className="landing-page-video-containter">
         <div className="landing-video-overlay">
+          <Menu render={renderMenu} setRender={setRenderMenu} page={page} setPage={setPage}/>
           <nav>
             <div className="logo-container">
               <img src={logoUrl} width="75px" height="75px" alt="Fade Empire NYC Logo"/>
             </div>
-            <div className="menu-container">
+            <div className="menu-container" onClick={() => setRenderMenu(true)}>
               <MenuIcon 
                 sx={{
                   color: 'white',
