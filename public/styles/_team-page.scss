@@ -1,6 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
 .team-page {
   position: relative;
   height: 100vh;
   width: 100vw;
-  background: indianred;
+  background: whitesmoke;
+  display: grid;
+  grid-template-rows: calc(100vh - 100px) 100px;
+}
+
+.carousel-control {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  height: 100px;
+  display: grid;
+  place-items: center;
+}
+
+.carousel-controller {
+  width: 100px;
+  height: max-content;
+  display: grid;
+  grid-template-columns: max-content max-content max-content;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.carousel-ball {
+  width: 25px;
+  height: 25px;
+  background: rgba(0,0,0,0.25);
+  border-radius: 100%;
+}
+
+.team-card {
+  position: relative;
+  display: grid;
+  grid-template-rows: max-content max-content max-content max-content max-content max-content;
+  grid-row-gap: 15px;
+  align-items: center;
+}
+
+.team-card-img-container {
+  position: relative;
+  width: 100vw;
+  height: 180px;
+  padding-top: 2vh;
+  display: grid;
+  grid-template-columns: max-content max-content max-content;
+  justify-content: center;
+}
+
+.team-card-pfp {
+  width: 180px;
+  height: 180px;
+  border-radius: 100%;
+  z-index: 2;
+}
+
+.pfp-img-1 {
+  width: 100px;
+  position: relative;
+  height: 100px;
+  border-radius: 100%;
+  transform: translate3d(30px, 20px, 0);
+  border-radius: 100% !important;
+}
+
+.pfp-img-2 {
+  width: 100px;
+  position: relative;
+  height: 100px;
+  border-radius: 100%;
+  transform: translate3d(-30px, 20px, 0);
+  border-radius: 100% !important;
+}
+
+.team-card-pfp-mini {
+  width: 100px;
+  position: relative;
+  height: 100px;
+  border-radius: 100%;
+}
+
+
+.team-card-pfp-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.65);
+  border-radius: 100%;
+}
+
+.team-member-name {
+  font-size: 1.75em;
+  font-weight: 900;
+  width: 100vw;
+  text-align: center;
+  color: $h1;
+}
+
+.team-member-description {
+  position: relative;
+  width: 85vw;
+  left: 7.5vw;
+  font-size: 1.15em;
+  color: $h2;
+}
+
+.team-member-contact-header {
+  position: relative;
+  font-weight: 650;
+  font-size: 1.22em;
+  left: 7.5vw;
+  color: $h1;
+  transform: translateY(10px);
+}
+
+.team-member-phone-number {
+  position: relative;
+  left: 7.5vw;
+  color: $h3;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.1em;
+}
+
+.team-member-social-container {
+  position: relative;
+  left: 7vw;
+  display: grid;
+  grid-template-columns: max-content max-content max-content max-content;
+  grid-column-gap: 10px;
+  align-items: center;
+  width: 80vw;
+  padding: 5px;
+  box-sizing: border-box;
+  height: max-content;
+//   background: rgba(0,0,0,0.0425);
+//   border-radius: 5px;
+}
+
+.social {
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  background: rgba(0,0,0,0.25);
+}
+
+.cta-button-team {
+  left: 7.5vw;
+}
+
+// Iphone SE
+@media only screen and (max-height: 750px) {
+  .team-card-img-container {
+    position: relative;
+    width: 100vw;
+    height: 120px;
+    padding-top: 2vh;
+    display: grid;
+    grid-template-columns: max-content max-content max-content;
+    justify-content: center;
+  }
+
+  .team-card-pfp {
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    z-index: 2;
+  }
+
+  .pfp-img-1 {
+    width: 80px;
+    position: relative;
+    height: 80px;
+    border-radius: 100%;
+    transform: translate3d(20px, 10px, 0);
+    border-radius: 100% !important;
+  }
+  
+  .pfp-img-2 {
+    width: 80px;
+    position: relative;
+    height: 80px;
+    border-radius: 100%;
+    transform: translate3d(-20px, 10px, 0);
+    border-radius: 100% !important;
+  }
+  
+  .team-card-pfp-mini {
+    width: 80px;
+    position: relative;
+    height: 80px;
+    border-radius: 100%;
+  }
+}
+
+.instagram {
+  background: url('../img/instagram.png');
+  background-size: cover;
+}
+
+.facebook {
+  background: url('../img/facebook.png');
+  background-size: cover;
+}
+
+.tiktok {
+  background: url('../img/tiktok.png');
+  background-size: cover;
 }

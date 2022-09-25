@@ -1,14 +1,18 @@
 // Variables
-//
+$h1: rgba(0,0,0,0.85);
+$h2: rgba(0,0,0,0.8);
+$h3: rgba(0,0,0,0.7);
 
 //Imports
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import './landing-page';
 @import './team-page';
 
 * {
   margin: 0;
   padding: 0;
-  scroll-behavior: smooth !important;
+  scroll-behavior: smooth !important;  
+  font-family: "Roboto", sans-serif;  
 }
 
 a {
